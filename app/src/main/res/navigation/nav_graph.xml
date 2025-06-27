@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productGridFragment">
+
+    <fragment
+        android:id="@+id/productGridFragment"
+        android:name="br.edu.ifsuldeminas.mch.navigationcomponent.fragment.ProductGridFragment"
+        android:label="Produtos"
+        tools:layout="@layout/fragment_product_grid">
+        <action
+            android:id="@+id/action_productGridFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="br.edu.ifsuldeminas.mch.navigationcomponent.fragment.ProductDetailsFragment"
+        android:label="Detalhes do Produto"
+        tools:layout="@layout/fragment_product_details">
+        <argument
+            android:name="productId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>
