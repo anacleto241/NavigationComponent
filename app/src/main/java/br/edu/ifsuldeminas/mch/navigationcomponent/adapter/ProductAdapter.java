@@ -1,4 +1,4 @@
-package br.edu.ifsuldeminas.mch.navigationcomponent.adapter; // Updated package
+package br.edu.ifsuldeminas.mch.navigationcomponent.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
